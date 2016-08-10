@@ -1,7 +1,37 @@
 {
-    "config": "heureka-extractor-config",
-    "configData": {
-        "parameters": {
-        }
-    }
+"title": "Parameters",
+"type": "object",
+"required": [
+"since",
+"username",
+"#password",
+"bucket"
+],
+"properties": {
+"username": {
+"title": "Username",
+"type": "string",
+"minLength": 1,
+"default": ""
+},
+"#password": {
+"title": "Password",
+"type": "string",
+"format": "password",
+"minLength": 1,
+"default": ""
+},
+"since": {
+"title": "Since",
+"type": "string",
+"minLength": 1,
+"default": "-14 day"
+},
+"bucket" : {
+"title": "Output bucket",
+"type": "string",
+"minLength": 1,
+"default": "in.c-ex-srovname-cz"
+}
+}
 }
